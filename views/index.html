@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>XOCHIWORLD | Home </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <script src="/components/3DModelViewer.js"></script>
+  <link rel="stylesheet" type="text/css" href="/home.css" />
+  <link rel="stylesheet" type="text/css" href="/layout.css" />
+  <link rel="stylesheet" type="text/css" href="/components/menu.css" />
+  <link rel="stylesheet" type="text/css" href="/components/social.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="container highlightTextOut">
+      <a href="/" alt="HOME">HOME</a>
+      <a href="/about" alt="ABOUT">ABOUT</a>
+      <a href="/projects" alt="PROJECTS">PROJECTS</a>
+      <a href="/press" alt="PRESS">PRESS</a>
+    </div>
+  </div>
+  <h1 data-text="WELCOME TO XOCHIWORLD"><span>WELCOME TO XOCHIWORLD</span></h1>
+  <div class="row">
+    <div id="footer">
+      <div class="center">
+        <div id="social-test">
+          <ul class="social">
+            <li><a href="https://www.instagram.com/xochiworld" target="_blank"><i class="fa fa-instagram"
+                  aria-hidden="true"></i></a></i></li>
+            <li><a href="https://www.youtube.com/channel/UCm5yvRalYtQyxp1R7YBk7fg" target="_blank"><i
+                  class="fa fa-youtube" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://medium.com/@3xochi" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="mailto:3xochi@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.glitch.com/9493069f-45cb-4415-bb88-0a7d80aebe48%2Fthree.js?1532000822202"></script>
+  <script src="https://cdn.glitch.com/9493069f-45cb-4415-bb88-0a7d80aebe48%2FOrbitControls.js?1532000821173"></script>
+  <script src="https://cdn.glitch.com/a09bdf89-49d8-4f65-8171-b36bffc3f4fb%2FGLTFLoader.js?1535053544819"></script>
+  <script src="https://cdn.glitch.com/030414ce-2933-4b4a-9f60-6179e8db2684%2FWebGL.js?1541090378206"></script>
+
+  <script type="text/javascript">
+    if (WEBGL.isWebGLAvailable() === false) {
+      document.body.appendChild(WEBGL.getWebGLErrorMessage());
+    }
+    var camera, scene, renderer, stats;
+    var materialShader;
+
+    var w = screen.width;
+    var h = screen.height;
+
+    init();
+    animate(); </script>
+
+</body>
+
+</html>

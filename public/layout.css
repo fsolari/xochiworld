@@ -1,0 +1,163 @@
+a {
+  color: #ffffff;
+}
+
+a:link {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+body {
+  background: #BFD1E5;
+  color: #fff;
+  padding: 0;
+  margin: 0px;
+  overflow: hidden;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#footer {
+  width: 100%;
+  margin: 1em auto;
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  bottom: 50px;
+}
+
+#top {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 17px;
+  text-align: center;
+}
+
+#topMenu {
+  width: 100%;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#infoNew {
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* The grid container */
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'left middle right';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left, .middle, .right {
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Style the left column */
+
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+
+.right {
+  grid-area: right;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-areas: 'left left left left left left' 'middle middle middle middle middle middle' 'right right right right right right';
+  }
+}
+
+.p {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}

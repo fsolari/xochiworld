@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/fsolari/xochiworld#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "owl.carousel": "^2.3.4",
+    "tiny-slider": "^2.9.2"
   }
 }
