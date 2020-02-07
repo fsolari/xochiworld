@@ -72,10 +72,10 @@ function init() {
                 roughness: 0,
                 transparent: true,
                 opacity: 0.8
-
             });
             model.traverse(o => {
                 if (o.isMesh) o.material = newMaterial;
+                o.material.side = THREE.DoubleSide;
             });
 
             scene.add(gltf.scene);
