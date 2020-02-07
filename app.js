@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 router.get('/', function (req, res) {
     res.sendFile(path.join(__dirname + viewsPath + '/index.html'));
 });
+/**
 
 router.get('/about', function (req, res) {
     res.sendFile(path.join(__dirname + viewsPath + '/about.html'));
@@ -25,7 +26,8 @@ router.get('/contact', function (req, res) {
 
 router.get('/press', function (req, res) {
     res.sendFile(path.join(__dirname + viewsPath + '/press.html'));
-});
+}); */
+
 
 app.use('/', router);
 app.listen(process.env.port || 3000);
